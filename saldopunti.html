@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Modulo prenotazione</title>
+
+	<link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/form-labels-on-top.css">
+	<link rel="stylesheet" href="css/saldopunti.css">
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/send_form_saldopunti.js"></script>
+</head>
+
+<!--
+	<header>
+		<h1></h1>
+    </header>
+-->
+<div class="main-content">
+
+	<!-- You only need this form and the form-labels-on-top.css -->
+
+	<form class="form-labels-on-top" name="modulo" id="form_prenotazione">
+
+		<div class="form-title-row">
+			<h1>Visualizza saldo punti</h1>
+		</div>
+
+		<br>
+
+		<img src="img/card.png" alt="Immagine salone" />
+
+		<br><br>
+		<div id="scritta">
+			Inserisci il codice presente sotto il codice a barre
+
+			<div class="form-row">
+				<label>
+					<span>Codice a barre</span>
+					<input type="text" name="bar_code" id="bar_code">
+				</label>
+			</div>
+
+			<input type='hidden' name="id_punto" id="id_punto" value="1" />
+
+			<div class="form-row">
+				<button type="button" id="invia_richiesta">Invia Richiesta</button>
+			</div>
+
+		</div>
+
+		<div id="risultato">
+
+		</div>
+	</form>
+
+
+</div>
+
+</body>
+
+</html>
